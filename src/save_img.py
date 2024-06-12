@@ -3,7 +3,7 @@ import cv2
 from picamera2 import Picamera2
 
 
-folder_path = 'img_dataset'
+folder_path =  os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'img_dataset')
 capture_count = 0
 
 def save_img(img):
